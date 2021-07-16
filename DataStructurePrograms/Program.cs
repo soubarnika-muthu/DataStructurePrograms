@@ -7,6 +7,7 @@ namespace DataStructurePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Implementation of Data structure Programs");
+            Console.WriteLine("1.UnOrdered List\n2.Ordered List");
             Console.WriteLine("Enter choice:");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -38,6 +39,7 @@ namespace DataStructurePrograms
                     Console.ReadLine();
                     break;
                 case 2:
+                    Console.WriteLine("Ordered List");
                     SortedLinkedList<string> ordered = new SortedLinkedList<string>();
                     string filePath1 = @"C:\Users\hp\source\repos\DataStructurePrograms\DataStructurePrograms\OrderedFile.txt";
                     string text1 = File.ReadAllText(filePath1);
