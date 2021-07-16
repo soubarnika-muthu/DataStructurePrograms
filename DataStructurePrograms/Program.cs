@@ -7,7 +7,7 @@ namespace DataStructurePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Implementation of Data structure Programs");
-            Console.WriteLine("1.UnOrdered List\n2.Ordered List");
+            Console.WriteLine("1.UnOrdered List\n2.Ordered List\n3.Balancedparanthesis");
             Console.WriteLine("Enter choice:");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -61,6 +61,11 @@ namespace DataStructurePrograms
                     }
                     string newText1 = ordered.DisplayList();
                     File.WriteAllText(filePath1, newText1);
+                    break;
+                case 3:
+                    Console.WriteLine("Balancedparanthesis");
+                    Balancedparanthesis paranthesis = new Balancedparanthesis();
+                    paranthesis.CheckParanthesis();
                     break;
             }
         }
