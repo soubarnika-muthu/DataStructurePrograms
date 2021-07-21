@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable", "HashTable\Hash
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber2DArray", "PrimeNumber2DArray\PrimeNumber2DArray.csproj", "{59BF19E3-72FE-4191-BFBF-815A33184758}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberOfBST", "NumberOfBST\NumberOfBST.csproj", "{2F878BAC-06D0-4BFC-B250-41951EBDF0CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{59BF19E3-72FE-4191-BFBF-815A33184758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59BF19E3-72FE-4191-BFBF-815A33184758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59BF19E3-72FE-4191-BFBF-815A33184758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F878BAC-06D0-4BFC-B250-41951EBDF0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F878BAC-06D0-4BFC-B250-41951EBDF0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F878BAC-06D0-4BFC-B250-41951EBDF0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F878BAC-06D0-4BFC-B250-41951EBDF0CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
