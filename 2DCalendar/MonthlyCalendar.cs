@@ -12,7 +12,8 @@ namespace _2DCalendar
         string[,] calender = new string[6, 7];
         //dictionary to get the index for the month
         Dictionary<string, int> month = new Dictionary<string, int>() { { "January", 0 }, { "February", 1 }, { "March", 2 }, { "April", 3 }, { "May", 4 }, { "June", 5 }, { "July", 6 }, { "August", 7 }, { "September", 8 }, { "October", 9 }, { "November", 10 }, { "December", 11 } };
-
+        //create the object for the queue
+        WeekDay week = new WeekDay();
         //initaialize the array with empty string
         public  MonthlyCalendar()
         {
@@ -111,6 +112,16 @@ namespace _2DCalendar
                     Console.Write("{0} ", calender[i, j]);
                 }
                 Console.WriteLine();
+            }
+        }
+        //display the queue
+        public void DisplayQueue()
+        {
+            WeekDayNode dayNode = week.Dequeue();
+            while (dayNode != null)
+            {
+                Console.WriteLine("{0}   {1}", dayNode.day, dayNode.date);
+                dayNode = week.Dequeue();
             }
         }
     }
