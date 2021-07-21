@@ -19,6 +19,9 @@ namespace PrimeNumber2DArray
     class PrimeLinkedList
     {
         private Node top;
+       
+        private Node front;
+        private Node rear;
 
         public void Push(int value)
         {
@@ -57,6 +60,52 @@ namespace PrimeNumber2DArray
             {
                 return 0;
             }
+        }
+        public void Enqueue(int value)
+        {
+            //creating the new node with given value
+            Node newNode = new Node(value);
+            //check whether the front is null or not . 
+            if (front == null)
+            {
+                front = newNode;
+            }
+            //make ne element as head
+            else
+            {
+                rear = front;
+                while (rear.Next != null)
+                {
+                    rear = rear.Next;
+                }
+                rear.Next = newNode;
+            }
+        }
+        public void Deque()
+        {
+            rear = front;
+            if (rear == null)
+            {
+                Console.WriteLine("No element in the list");
+            }
+            //make the next node as head
+            else
+            {
+                front = front.Next;
+            }
+            Console.WriteLine("{0} ", rear.value);
+        }
+        public int CheckFront()
+        {
+            if (front == null)
+            {
+                return 0;
+            }
+            else
+            {
+                return 1;
+            }
+
         }
     }
 }

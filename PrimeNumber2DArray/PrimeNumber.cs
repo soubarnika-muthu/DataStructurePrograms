@@ -14,6 +14,7 @@ namespace PrimeNumber2DArray
         int[,] primeArray = new int[10, 100];
         int[] prime = new int[10];
         PrimeLinkedList anagram = new PrimeLinkedList();
+        PrimeLinkedList anagramQueue = new PrimeLinkedList();
         public bool IsPrime(int value)
         {
             bool PRIME = true;
@@ -64,6 +65,7 @@ namespace PrimeNumber2DArray
                     if (isAnagram(array[i].ToString(), array[j].ToString()))
                     {
                         anagram.Push(array[i]);
+                        anagramQueue.Enqueue(array[i]);
                         break;
                     }
                 }
@@ -111,6 +113,13 @@ namespace PrimeNumber2DArray
             while (anagram.CheckTop() == 0)
             {
                 anagram.pop();
+            }
+        }
+        public void PrintAnagramQueue()
+        {
+            while (anagramQueue.CheckFront() == 1)
+            {
+                anagramQueue.Deque();
             }
         }
     }
